@@ -134,7 +134,7 @@ SC_MODULE(SEC_ECC_TRIM)
     }
 };
 
-int sc_main (int __attribute__((unused)) sc_argc, char __attribute__((unused)) *sc_argv[])
+int sc_main ([[maybe_unused]] int sc_argc, [[maybe_unused]] char *sc_argv[])
 {
     DRAM dram("DRAM");
     DRAM_SEC_ECC sec_ecc("DRAM_SEC_ECC");

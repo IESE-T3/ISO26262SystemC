@@ -418,7 +418,7 @@ SC_MODULE(ALL_OTHER_COMPONENTS)
     }
 };
 
-int sc_main (int __attribute__((unused)) sc_argc, char __attribute__((unused)) *sc_argv[])
+int sc_main ([[maybe_unused]] int sc_argc, [[maybe_unused]] char *sc_argv[])
 {
     double DRAM_FIT = 2300.0;
     double OTHER_COMPONENTS = 1920.0;
